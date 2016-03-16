@@ -1,4 +1,3 @@
-http://gnutoolchains.com/raspberry/tutorial/
 #Building Raspberry PI apps from Windows
 
 GNU Tools installed to C:\Tools\GnuARM\RPi
