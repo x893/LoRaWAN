@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IoTRest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://thethingsnetwork.org</Value>
+    </Setting>
+    <Setting Name="GatewayUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/api/v0/gateways/{eui}</Value>
+    </Setting>
+    <Setting Name="Limit" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="UseDB" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ServerFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">json</Value>
+    </Setting>
+    <Setting Name="MQTTServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">croft.thethings.girovito.nl</Value>
+    </Setting>
+    <Setting Name="MQTTPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1883</Value>
+    </Setting>
+    <Setting Name="GatewayEUI" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;1DEE1325F39AD9CA&lt;/string&gt;
+  &lt;string&gt;1DEE1325F39AD9C9&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MQTTTopic" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;gateways/1DEE1325F39AD9CA/status&lt;/string&gt;
+  &lt;string&gt;gateways/1DEE1325F39AD9C9/status&lt;/string&gt;
+  &lt;string&gt;nodes/02D1E701/packets&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="NodeEUI" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;02D1E701&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="NodeUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/api/v0/nodes/{eui}</Value>
+    </Setting>
+    <Setting Name="LwgPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1700</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
