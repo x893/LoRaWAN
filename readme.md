@@ -4,3 +4,6 @@ http://gnutoolchains.com/raspberry/tutorial/
 GNU Tools installed to C:\Tools\GnuARM\RPi
 
 More information can be found on the [gnutoolchains.com](http://gnutoolchains.com/raspberry/tutorial/)
+
+git clone --recursive https://github.com/x893/LoRaWAN.git
+

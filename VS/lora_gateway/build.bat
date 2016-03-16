@@ -9,7 +9,7 @@ IF "%1*"=="clean*" GOTO :CLEAN
 IF "%1*"=="rebuild*" CALL :REBUILD
 
 :BUILD
-make CROSS_COMPILE=arm-linux-gnueabihf- all 2>build.log | %FIND% /V "### Generate object file" | %FIND% /V "### Generate dependency file"
+make CROSS_COMPILE=arm-linux-gnueabihf- all 2>build.log
 CALL :CHECK
 GOTO :DONE
 
