@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="Assets\linux_nmake.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\LinuxDebugger.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\LocalDebugger.xaml">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{08a26e93-524c-4982-a01c-c8d4f223d6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{e8560c27-28d0-4412-9e04-960c3f12437f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lora_gateway\libloragw\src\loragw_aux.c" />
+    <ClCompile Include="..\..\lora_gateway\libloragw\src\loragw_gps.c" />
+    <ClCompile Include="..\..\lora_gateway\libloragw\src\loragw_hal.c" />
+    <ClCompile Include="..\..\lora_gateway\libloragw\src\loragw_reg.c" />
+    <ClCompile Include="..\..\lora_gateway\libloragw\src\loragw_spi.native.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\config.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_aux.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_gps.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_hal.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_reg.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_spi.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

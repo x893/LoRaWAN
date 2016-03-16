@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="Assets\linux_nmake.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\LinuxDebugger.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\LocalDebugger.xaml">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{08a26e93-524c-4982-a01c-c8d4f223d6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{367761cf-4f36-4e5d-ab76-cf0d5f7e4b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lora_gateway/inc">
+      <UniqueIdentifier>{d1cf369e-4160-4eed-ad84-8ff0145ada06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\packet_forwarder\lora_pkt_fwd\src\base64.c" />
+    <ClCompile Include="..\..\packet_forwarder\lora_pkt_fwd\src\jitqueue.c" />
+    <ClCompile Include="..\..\packet_forwarder\lora_pkt_fwd\src\lora_pkt_fwd.c" />
+    <ClCompile Include="..\..\packet_forwarder\lora_pkt_fwd\src\parson.c" />
+    <ClCompile Include="..\..\packet_forwarder\lora_pkt_fwd\src\timersync.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\packet_forwarder\lora_pkt_fwd\inc\base64.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\packet_forwarder\lora_pkt_fwd\inc\jitqueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\packet_forwarder\lora_pkt_fwd\inc\parson.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\packet_forwarder\lora_pkt_fwd\inc\timersync.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\packet_forwarder\lora_pkt_fwd\inc\trace.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\config.h">
+      <Filter>lora_gateway/inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_aux.h">
+      <Filter>lora_gateway/inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_gps.h">
+      <Filter>lora_gateway/inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_hal.h">
+      <Filter>lora_gateway/inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_reg.h">
+      <Filter>lora_gateway/inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lora_gateway\libloragw\inc\loragw_spi.h">
+      <Filter>lora_gateway/inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
