@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{181f3d03-ede0-46ad-9b8e-c243abe60cef}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>lora_pkt_fwd</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{FC1A4D80-50E9-41DA-9192-61C0DBAA00D2}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/home/debian/projects</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(ProjectDir)obj</IntDir>
+    <RemoteBuildCommandLine>cd $(RemoteProjectDir) &amp;&amp; make</RemoteBuildCommandLine>
+    <RemoteReBuildCommandLine>cd $(RemoteProjectDir) &amp;&amp; make</RemoteReBuildCommandLine>
+    <RemoteCleanCommandLine>cd $(RemoteProjectDir) &amp;&amp; make clean</RemoteCleanCommandLine>
+    <RemoteBuildOutputs>$(RemoteProjectDir)/$(ProjectName);$(RemoteBuildOutputs)</RemoteBuildOutputs>
+    <NMakeIncludeSearchPath>inc;.;..\libloragw\inc;..\BBG\usr\include\arm-linux-gnueabihf</NMakeIncludeSearchPath>
+    <NMakePreprocessorDefinitions>VERSION_STRING="4.0.1"</NMakePreprocessorDefinitions>
+    <NMakeForcedIncludes>
+    </NMakeForcedIncludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\base64.h" />
+    <ClInclude Include="inc\jitqueue.h" />
+    <ClInclude Include="inc\parson.h" />
+    <ClInclude Include="inc\timersync.h" />
+    <ClInclude Include="inc\trace.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base64.c" />
+    <ClCompile Include="src\jitqueue.c" />
+    <ClCompile Include="src\lora_pkt_fwd.c" />
+    <ClCompile Include="src\parson.c" />
+    <ClCompile Include="src\poly_pkt_fwd.c" />
+    <ClCompile Include="src\timersync.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cfg\global_conf.json.PCB_E286.EU868.basic" />
+    <None Include="cfg\global_conf.json.PCB_E286.EU868.beacon" />
+    <None Include="cfg\global_conf.json.PCB_E286.EU868.gps" />
+    <None Include="cfg\global_conf.json.PCB_E336.EU868.basic" />
+    <None Include="cfg\global_conf.json.PCB_E336.EU868.beacon" />
+    <None Include="cfg\global_conf.json.PCB_E336.EU868.gps" />
+    <None Include="cfg\global_conf.json.US902.basic" />
+    <None Include="cfg\global_conf.json.US902.beacon" />
+    <None Include="cfg\global_conf.json.US902.gps" />
+    <None Include="global_conf.json" />
+    <None Include="Makefile" />
+    <None Include="reset_lgw.sh" />
+    <None Include="VERSION" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
